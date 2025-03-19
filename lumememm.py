@@ -1,7 +1,7 @@
 import pygame
 import math
 
-# Pygame'i initsialiseerimine
+# Pygame'i käivitamine
 pygame.init()
 
 # Akna suurus
@@ -41,11 +41,11 @@ while running:
     pygame.draw.circle(screen, WHITE, (150, 140), 40)  # Keskmine osa
     pygame.draw.circle(screen, WHITE, (150, 75), 30)  # Pea
 
-    # Silmad (oktagonid)
+    # Silmad
     draw_exact_octagon(screen, (0, 0, 0), (140, 70), 5)  # Vasak silm
     draw_exact_octagon(screen, (0, 0, 0), (160, 70), 5)  # Parem silm
 
-    # Nina (kõrgemal ja teravam)
+    # Nina
     pygame.draw.polygon(screen, RED, [(150, 95), (145, 80), (155, 80)])  # Nina kolmnurk
 
     # Ürituste käsitlemine
